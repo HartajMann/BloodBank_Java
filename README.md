@@ -1,6 +1,7 @@
 # Blood Bank Management System
 
 Description:
+
 This Blood Bank Management System is a Java-based desktop application that aims to streamline the process of managing and maintaining blood bank data. The system is designed to be user-friendly and efficient, making it easy to manage all blood bank activities.
 
 Key Features:
