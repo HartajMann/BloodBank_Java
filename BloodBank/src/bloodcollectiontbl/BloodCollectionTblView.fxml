@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="700.0" minWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="bloodcollectiontbl.BloodCollectionTblViewController">
+   <children>
+      <Label prefHeight="104.0" prefWidth="700.0" style="-fx-background-color: black;" />
+      <Label layoutX="21.0" layoutY="14.0" prefHeight="74.0" prefWidth="658.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 5;" text="Blood Units Collected">
+         <font>
+            <Font name="Harrington" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="57.0" fitWidth="75.0" layoutX="598.0" layoutY="22.0">
+         <image>
+            <Image url="@../../pics/registration.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="151.0" layoutY="125.0" text="Donor Mobile Number">
+         <font>
+            <Font name="Georgia" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmob" layoutX="151.0" layoutY="148.0" prefHeight="23.0" prefWidth="192.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3;">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </TextField>
+      <Button layoutX="403.0" layoutY="147.0" mnemonicParsing="false" onAction="#dorecords" prefHeight="33.0" prefWidth="134.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 4; -fx-border-width: 2;" text="Get Records">
+         <font>
+            <Font name="Serif Regular" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="264.0" layoutY="205.0" mnemonicParsing="false" onAction="#doallrecords" prefHeight="34.0" prefWidth="158.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 4; -fx-border-width: 2;" text="Fetch All Records">
+         <font>
+            <Font name="Serif Regular" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView fx:id="txttbl" layoutX="23.0" layoutY="264.0" prefHeight="422.0" prefWidth="658.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 2; -fx-border-radius: 5;" />
+   </children>
+</AnchorPane>

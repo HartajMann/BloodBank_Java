@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodissuedtbl.BloodIssuedtblViewController">
+   <children>
+      <Label prefHeight="109.0" prefWidth="700.0" style="-fx-background-color: #bf1414;" />
+      <Label layoutX="10.0" layoutY="8.0" prefHeight="94.0" prefWidth="682.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 6;" text="  Blood Issued Data" textFill="WHITE">
+         <font>
+            <Font name="Harrington" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="88.0" layoutX="584.0" layoutY="20.0">
+         <image>
+            <Image url="@../../pics/medical-record.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="58.0" layoutY="134.0" text="Date Of Issue">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="492.0" layoutY="157.0" mnemonicParsing="false" onAction="#dolistall" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3; -fx-border-width: 2;" text="List All">
+         <font>
+            <Font name="Serif Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="278.0" layoutY="134.0" text="Blood Type">
+         <font>
+            <Font name="Georgia" size="20.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combotype" layoutX="276.0" layoutY="158.0" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 2; -fx-border-radius: 6;" />
+      <TableView fx:id="txttbl" layoutX="31.0" layoutY="220.0" prefHeight="457.0" prefWidth="642.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 5; -fx-border-width: 2;" />
+      <DatePicker fx:id="txtdate" layoutX="56.0" layoutY="158.0" prefHeight="34.0" prefWidth="175.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 6; -fx-border-width: 2;" />
+   </children>
+</AnchorPane>

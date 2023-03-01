@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="infotable.DonorsInfoViewController">
+   <children>
+      <TableView fx:id="tblgrid" layoutX="13.0" layoutY="203.0" prefHeight="482.0" prefWidth="674.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 5; -fx-border-width: 2;" />
+      <Label alignment="CENTER" prefHeight="108.0" prefWidth="700.0" style="-fx-background-color: #bf1414;">
+         <font>
+            <Font name="Harrington" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="124.0" prefHeight="18.0" prefWidth="109.0" text="Blood Group">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtbgroup" layoutX="61.0" layoutY="148.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 5; -fx-border-width: 2;">
+         <font>
+            <Font name="Georgia" size="16.0" />
+         </font></TextField>
+      <Button layoutX="317.0" layoutY="148.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 5; -fx-border-width: 2;" text="Fetch">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="435.0" layoutY="148.0" mnemonicParsing="false" onAction="#doshowall" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 5; -fx-border-width: 2;" text="ShowAll">
+         <font>
+            <Font name="Georgia Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="10.0" prefHeight="87.0" prefWidth="674.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 6; -fx-border-radius: 5; -fx-background-radius: 8;" text="Donors Info" textFill="WHITE">
+         <font>
+            <Font name="Harrington" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="73.0" fitWidth="94.0" layoutX="583.0" layoutY="17.0">
+         <image>
+            <Image url="@../../pics/medical-record.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="80.0" layoutX="21.0" layoutY="17.0">
+         <image>
+            <Image url="@../../pics/registration.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

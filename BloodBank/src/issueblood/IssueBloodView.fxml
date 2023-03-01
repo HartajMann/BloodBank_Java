@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="issueblood.IssueBloodViewController">
+   <children>
+      <Label prefHeight="130.0" prefWidth="700.0" style="-fx-background-color: black;" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="72.0" layoutY="190.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 1; -fx-border-radius: 5;">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="72.0" layoutY="165.0" text="Needy Name">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtno" layoutX="421.0" layoutY="188.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 1; -fx-border-radius: 5;">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="421.0" layoutY="163.0" text="Mobile">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txthos" layoutX="72.0" layoutY="286.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 1; -fx-border-radius: 5;">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="72.0" layoutY="261.0" text="Hospital">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtpos" layoutX="421.0" layoutY="284.0" prefHeight="28.0" prefWidth="188.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 1; -fx-border-radius: 5;">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="421.0" layoutY="259.0" text="Purpose/Reason">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="355.0" text="Blood Group">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtunits" layoutX="421.0" layoutY="378.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 1; -fx-border-radius: 5;">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="421.0" layoutY="353.0" text="No. of Units">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="461.0" text="Date Of Issue">
+         <font>
+            <Font name="Serif Regular" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateissue" layoutX="262.0" layoutY="484.0" prefHeight="28.0" prefWidth="175.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 1; -fx-border-radius: 5;" />
+      <ComboBox fx:id="comboblood" layoutX="72.0" layoutY="379.0" prefHeight="28.0" prefWidth="188.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 1; -fx-border-radius: 5;" visibleRowCount="8" />
+      <Label alignment="CENTER" layoutX="28.0" layoutY="15.0" prefHeight="100.0" prefWidth="646.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 8;" text="Issue Blood Units" textFill="#bf1414">
+         <font>
+            <Font name="Harrington" size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="75.0" fitWidth="86.0" layoutX="39.0" layoutY="28.0">
+         <image>
+            <Image url="@../../pics/donator.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="100.0" layoutX="559.0" layoutY="28.0">
+         <image>
+            <Image url="@../../pics/blood-donation.png" />
+         </image>
+      </ImageView>
+      <Label layoutY="578.0" prefHeight="124.0" prefWidth="700.0" style="-fx-background-color: black;" />
+      <Label layoutX="10.0" layoutY="593.0" prefHeight="90.0" prefWidth="681.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 11;" />
+      <Button layoutX="37.0" layoutY="617.0" mnemonicParsing="false" onAction="#douplode" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 2; -fx-border-radius: 4;" text="Update Database">
+         <font>
+            <Font name="Serif Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="494.0" layoutY="617.0" mnemonicParsing="false" onAction="#doclear" prefHeight="36.0" prefWidth="174.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 2; -fx-border-radius: 4;" text="Clear">
+         <font>
+            <Font name="Serif Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="272.0" layoutY="617.0" mnemonicParsing="false" onAction="#gohome" prefHeight="41.0" prefWidth="177.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 2; -fx-border-radius: 4;" text="Home">
+         <font>
+            <Font name="Serif Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

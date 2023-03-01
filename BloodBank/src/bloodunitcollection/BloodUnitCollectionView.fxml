@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="0.0" maxWidth="0.0" minHeight="650.0" minWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bloodunitcollection.BloodUnitCollectionViewController">
+   <children>
+      <Label alignment="CENTER" prefHeight="118.0" prefWidth="700.0" style="-fx-background-color: black;">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="0.8939394228386156" endY="0.4356060389316443" startX="0.6969696960665963" startY="0.511363637266737">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.4185185134410858" blue="0.4185185134410858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.30000001192092896" blue="0.7900000214576721" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="38.0" layoutY="139.0" prefHeight="36.0" prefWidth="222.0" text="Registered Mobile Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.07954547621987079" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.4185185134410858" blue="0.4185185134410858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.010526316240429878" green="0.0033138401340693235" blue="0.0033138401340693235" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TextField fx:id="txtbgroup" editable="false" layoutX="38.0" layoutY="270.0" prefHeight="30.0" prefWidth="202.0" style="-fx-border-color: #ae3434; -fx-border-radius: 5;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="38.0" layoutY="234.0" prefHeight="36.0" prefWidth="222.0" text="Blood Group">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.07954547621987079" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.4185185134410858" blue="0.4185185134410858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.010526316240429878" green="0.0033138401340693235" blue="0.0033138401340693235" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button layoutX="289.0" layoutY="269.0" mnemonicParsing="false" onAction="#dosearch" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="Search" textFill="#ae3434">
+         <font>
+            <Font name="Georgia Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="imgview" fitHeight="152.0" fitWidth="150.0" layoutX="500.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="182.0" layoutX="38.0" layoutY="344.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.9" width="612.0" />
+      <Label layoutX="70.0" layoutY="378.0" prefHeight="36.0" prefWidth="222.0" text="Date Of Donation">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="1.0" centerY="0.07954547621987079" cycleMethod="REFLECT" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.4185185134410858" blue="0.4185185134410858" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.010526316240429878" green="0.0033138401340693235" blue="0.0033138401340693235" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <DatePicker fx:id="seldate" layoutX="70.0" layoutY="420.0" prefHeight="31.0" prefWidth="186.0" style="-fx-border-color: #ae3434; -fx-border-radius: 5;" />
+      <ComboBox fx:id="combono" editable="true" layoutX="37.0" layoutY="182.0" prefHeight="31.0" prefWidth="202.0" style="-fx-border-color: #ae3434; -fx-border-radius: 5;" />
+      <Label alignment="CENTER" layoutX="161.0" layoutY="20.0" prefHeight="78.0" prefWidth="394.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-width: 5; -fx-background-radius: 3;" text="Blood Unit Collection">
+         <font>
+            <Font name="Georgia Italic" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9848485119415052" startY="0.8257575829823812">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6842105388641357" green="0.20272904634475708" blue="0.20272904634475708" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6823529601097107" green="0.20392157137393951" blue="0.20392157137393951" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <Glow level="0.17" />
+         </effect>
+      </Label>
+      <Label layoutX="38.0" layoutY="20.0" prefHeight="78.0" prefWidth="98.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-width: 3;" />
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="42.0" layoutY="24.0">
+         <image>
+            <Image url="@../../pics/blood-donation%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="580.0" layoutY="20.0" prefHeight="78.0" prefWidth="98.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-width: 3;" />
+      <ImageView fitHeight="72.0" fitWidth="91.0" layoutX="584.0" layoutY="24.0">
+         <image>
+            <Image url="@../../pics/blood-cells.png" />
+         </image>
+      </ImageView>
+      <Label layoutY="566.0" prefHeight="85.0" prefWidth="700.0" style="-fx-background-color: black;" />
+      <Label layoutX="17.0" layoutY="579.0" prefHeight="58.0" prefWidth="666.0" style="-fx-background-color: white; -fx-background-radius: 5;" />
+      <Button layoutX="69.0" layoutY="592.0" mnemonicParsing="false" onAction="#doupload" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="Upload Data" textFill="#ae3434">
+         <font>
+            <Font name="Georgia Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="485.0" layoutY="593.0" mnemonicParsing="false" onAction="#doreset" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="Reset" textFill="#ae3434">
+         <font>
+            <Font name="Georgia Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="274.0" layoutY="592.0" mnemonicParsing="false" onAction="#gohome" prefHeight="31.0" prefWidth="140.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="Home" textFill="#ae3434">
+         <font>
+            <Font name="Georgia Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

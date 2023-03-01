@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlpanel.ControlPanelViewController">
+   <children>
+      <ImageView fx:id="txtreg" fitHeight="122.0" fitWidth="175.0" layoutX="57.0" layoutY="130.0">
+         <image>
+            <Image url="@../../pics/blood-donor-card.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="165.0" layoutX="324.0" layoutY="126.0">
+         <image>
+            <Image url="@../../pics/donate.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="150.0" layoutX="591.0" layoutY="137.0">
+         <image>
+            <Image url="@../../pics/stock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="165.0" layoutX="175.0" layoutY="378.0">
+         <image>
+            <Image url="@../../pics/clock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="114.0" fitWidth="165.0" layoutX="446.0" layoutY="375.0">
+         <image>
+            <Image url="@../../pics/health.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="73.0" layoutY="262.0" mnemonicParsing="false" onAction="#doregister" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="Registration" textFill="#ae3434">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label prefHeight="114.0" prefWidth="800.0" style="-fx-background-color: black;" />
+      <Label alignment="CENTER" layoutX="175.0" layoutY="10.0" prefHeight="92.0" prefWidth="455.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-background-radius: 5; -fx-border-width: 5;" text="Control Panel" textFill="#ae3434">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="92.0" prefWidth="134.0" style="-fx-background-radius: 5; -fx-background-color: white;" />
+      <Label layoutX="657.0" layoutY="10.0" prefHeight="92.0" prefWidth="134.0" style="-fx-background-radius: 5; -fx-background-color: white;" />
+      <ImageView fitHeight="83.0" fitWidth="109.0" layoutX="23.0" layoutY="16.0">
+         <image>
+            <Image url="@../../pics/assurance.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="109.0" layoutX="670.0" layoutY="16.0">
+         <image>
+            <Image url="@../../pics/blood-bank.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="457.0" layoutY="500.0" mnemonicParsing="false" onAction="#doissue" prefHeight="20.0" prefWidth="142.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="Issue" textFill="#ae3434">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="177.0" layoutY="500.0" mnemonicParsing="false" onAction="#dohistory" prefHeight="20.0" prefWidth="142.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="History" textFill="#ae3434">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="599.0" layoutY="262.0" mnemonicParsing="false" onAction="#dostock" prefHeight="20.0" prefWidth="142.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="Stock" textFill="#ae3434">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutY="602.0" prefHeight="99.0" prefWidth="800.0" style="-fx-background-color: black;" />
+      <Button layoutX="331.0" layoutY="262.0" mnemonicParsing="false" onAction="#dodonate" prefHeight="20.0" prefWidth="142.0" style="-fx-background-color: white; -fx-border-color: #ae3434; -fx-border-radius: 5;" text="Donation" textFill="#ae3434">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="15.0" layoutY="616.0" prefHeight="74.0" prefWidth="770.0" style="-fx-background-color: ae3434; -fx-background-radius: 2;" />
+      <Label layoutX="23.0" layoutY="625.0" prefHeight="55.0" prefWidth="750.0" style="-fx-background-color: white; -fx-background-radius: 3;" />
+      <Label layoutX="35.0" layoutY="631.0" prefHeight="42.0" prefWidth="727.0" style="-fx-background-color: black; -fx-background-radius: 5;" />
+   </children>
+</AnchorPane>

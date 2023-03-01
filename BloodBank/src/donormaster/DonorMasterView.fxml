@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="donormaster.DonorMasterViewController">
+   <children>
+      <Label alignment="CENTER" layoutY="-6.0" prefHeight="124.0" prefWidth="708.0" style="-fx-background-color: black;">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.21111111342906952" blue="0.21111111342906952" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8835025429725647" green="0.7300000190734863" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="25.0" layoutY="160.0" prefHeight="38.0" prefWidth="124.0" text="Mobile Number">
+         <font>
+            <Font name="Serif Regular" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtno" layoutX="25.0" layoutY="197.0" prefHeight="26.0" prefWidth="188.0" style="-fx-border-color: #bf1414; -fx-background-color: white; -fx-border-radius: 3;">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="25.0" layoutY="251.0" prefHeight="38.0" prefWidth="124.0" text="Name">
+         <font>
+            <Font name="Serif Regular" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtname" layoutX="25.0" layoutY="289.0" prefHeight="26.0" prefWidth="188.0" style="-fx-border-color: #bf1414; -fx-background-color: white; -fx-border-radius: 3;">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="259.0" layoutY="255.0" prefHeight="38.0" prefWidth="124.0" text="Gender">
+         <font>
+            <Font name="Serif Regular" size="17.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combogender" layoutX="259.0" layoutY="288.0" prefHeight="30.0" prefWidth="150.0" promptText="Select" style="-fx-border-color: #bf1414; -fx-background-color: white; -fx-border-radius: 3;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Button layoutX="550.0" layoutY="292.0" mnemonicParsing="false" onAction="#dobrowse" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3; -fx-border-width: 2;" text="Browse">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="23.0" layoutY="341.0" prefHeight="38.0" prefWidth="124.0" text="Address">
+         <font>
+            <Font name="Serif Regular" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtadd" layoutX="23.0" layoutY="379.0" prefHeight="30.0" prefWidth="446.0" style="-fx-border-color: #bf1414; -fx-background-color: white; -fx-border-radius: 3;">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="487.0" layoutY="341.0" prefHeight="38.0" prefWidth="124.0" text="City/Town">
+         <font>
+            <Font name="Serif Regular" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcity" layoutX="487.0" layoutY="379.0" prefHeight="26.0" prefWidth="188.0" style="-fx-border-color: #bf1414; -fx-background-color: white; -fx-border-radius: 3;">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="imageshow" fitHeight="132.0" fitWidth="143.0" layoutX="529.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pics/user%20(2).png" />
+         </image></ImageView>
+      <Button layoutX="257.0" layoutY="196.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3; -fx-border-width: 2;" text="Fetch">
+         <font>
+            <Font name="Harrington" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="25.0" layoutY="441.0" prefHeight="38.0" prefWidth="124.0" text="Blood Group">
+         <font>
+            <Font name="Serif Regular" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="441.0" prefHeight="38.0" prefWidth="124.0" text="Age">
+         <font>
+            <Font name="Serif Regular" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtage" layoutX="240.0" layoutY="479.0" prefHeight="30.0" prefWidth="169.0" style="-fx-border-color: #bf1414; -fx-background-color: white; -fx-border-radius: 3;">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="451.0" layoutY="441.0" prefHeight="38.0" prefWidth="124.0" text="Disease If Any">
+         <font>
+            <Font name="Serif Regular" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtdisease" layoutX="451.0" layoutY="479.0" prefHeight="30.0" prefWidth="206.0" style="-fx-border-color: #bf1414; -fx-background-color: white; -fx-border-radius: 3;">
+         <font>
+            <Font name="Georgia Bold" size="16.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="combobgroup" layoutX="23.0" layoutY="478.0" prefHeight="30.0" prefWidth="176.0" promptText="Select" style="-fx-border-color: #bf1414; -fx-background-color: white; -fx-border-radius: 3;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="26.0" layoutY="14.0" prefHeight="89.0" prefWidth="658.0" style="-fx-background-color: #bf1414; -fx-background-radius: 4; -fx-border-color: white; -fx-border-width: 2;" />
+      <Label alignment="CENTER" layoutX="36.0" layoutY="24.0" prefHeight="70.0" prefWidth="634.0" style="-fx-background-color: white; -fx-background-radius: 2;" text="Donor Registration">
+         <font>
+            <Font name="Harrington" size="38.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="63.0" fitWidth="110.0" layoutX="34.0" layoutY="24.0">
+         <image>
+            <Image url="@../../pics/blood-donor-card.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="110.0" layoutX="549.0" layoutY="28.0">
+         <image>
+            <Image url="@../../pics/donation.png" />
+         </image>
+      </ImageView>
+      <Label layoutY="568.0" prefHeight="132.0" prefWidth="708.0" style="-fx-background-color: black;" />
+      <Label layoutX="20.0" layoutY="583.0" prefHeight="100.0" prefWidth="670.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-width: 10; -fx-border-radius: 3; -fx-background-radius: 11;" />
+      <Button layoutX="427.0" layoutY="618.0" mnemonicParsing="false" onAction="#dodelete" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3; -fx-border-width: 2;" text="Delete">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="295.0" layoutY="618.0" mnemonicParsing="false" onAction="#doupdate" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3; -fx-border-width: 2;" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="166.0" layoutY="618.0" mnemonicParsing="false" onAction="#doregister" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3; -fx-border-width: 2;" text="Register Now">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="34.0" layoutY="618.0" mnemonicParsing="false" onAction="#doclear" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3; -fx-border-width: 2;" text="Clear">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="556.0" layoutY="618.0" mnemonicParsing="false" onAction="#gohome" prefHeight="30.0" prefWidth="110.0" style="-fx-background-color: white; -fx-border-color: #bf1414; -fx-border-radius: 3; -fx-border-width: 2;" text="Home">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
